@@ -41,3 +41,7 @@ console.log(`Number.NEGATIVE_INFINITY : ${x}`);
 
 x = Number.POSITIVE_INFINITY // Infinity
 console.log(`Number.POSITIVE_INFINITY : ${x}`);
+
+
+
+x = 200e5; // 200 x 105
