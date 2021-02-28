@@ -15,8 +15,52 @@ console.log(foods);
 
 // Tip Use push with the spread operator (...) as an alternative to the concat method.
 var numbers = [1,2,3,4,5];
-var num2 = [6,7,8,9,10,11,12,33,44,44,33,22,];
-result = numbers.push(...num2);
-
-console.log(result);
+var num2 = [6,7,8,9,10];
+numbers.push(...num2);
 console.log(numbers);
+
+
+//5. Unshift Add an element to the beginning of an Array.
+foods.unshift('🐝');
+console.log(foods);
+
+// Tip: Use unshift with the spread operator (...) to concat elements at the beginning.
+numbers.unshift(...num2);
+console.log(numbers);
+
+
+//6. Pop removes the last element of the array.
+//Tip: We can use the pop method in stack implementation.
+result = foods.pop();
+console.log(result);
+console.log(foods);
+
+/* 
+    7. Shift Remove the first element of the array.
+    Tip: We can use the shift method in dequeue operations on Queue implementation.
+*/
+foods.shift();
+console.log(foods);
+
+/*
+    8. Join() the elements of Array to String.
+    Tip: use as an alternative to string concatenation.
+*/
+
+var joinedFood = foods.join();
+var joinedFood1 = foods.join('**');
+console.log(joinedFood);
+console.log(joinedFood1);
+console.log(foods);
+
+var arr = ['J','a','v','a'];
+var str = ' ';
+
+// whit out join
+for (let i = 0, len = arr.length; i < len ; i ++) {
+    str += arr[i];
+}
+console.log(str);
+
+var str2 = arr.join('');
+console.log(str2);
