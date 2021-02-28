@@ -62,5 +62,61 @@ for (let i = 0, len = arr.length; i < len ; i ++) {
 }
 console.log(str);
 
+// with join
 var str2 = arr.join('');
 console.log(str2);
+
+/*
+    9.Concat
+    Concat an Array with arguments.
+
+*/
+
+var array9 = [1,2,3,4,5];
+var newArray = array9.concat(1,2,3, [12,12,34], undefined, null);
+console.log(newArray);
+
+
+/*
+    10. Reverse 
+    Reverse the elements of the array.
+*/
+
+var foods = ["🍎", "🍊", "🍗", "🍕", "🥩"];
+foods.reverse();
+console.log(foods);
+
+//Tip: Reversing string.
+var str = "Anitha";
+var strArray = [...str].reverse().join('');
+console.log(strArray);
+
+
+/* 
+    11. indexOf
+    First index of a given element in the Array, if it is not present, it returns -1
+*/
+
+var foods = ["🍎", "🍊", "🍗", "🍕", "🥩", "🍎"];
+foods.indexOf('🍎'); //0
+foods.indexOf('🍔'); // -1
+
+
+/*
+    12. Some
+    Checks if any of the elements return true from the callback function.
+*/
+
+var num = [1,2,3,4,10, 12];
+console.log(num.some(n => n > 10));
+console.log(num.some(n => n > 100));
+console.log(num.some(n => n != null));
+
+/*
+    13. Every
+    Check if all fo the elements return true from the callback function.
+*/
+
+var num = [1,2,3,4,10, 12];
+console.log(num.every(n => n > 10));
+console.log(num.every(n => n > 0));
